@@ -1,0 +1,11 @@
+# Sample Cookies Format
+# One cookie per line in Netscape format:
+# domain<TAB>subdomains<TAB>path<TAB>secure<TAB>expires<TAB>name<TAB>value
+
+# Example entries (replace with your actual cookies):
+.example.com	TRUE	/	FALSE	1735689600	session_id	abc123xyz789
+.github.com	TRUE	/	TRUE	1735689600	auth_token	your_token_here
+.google.com	TRUE	/	FALSE	1735689600	preferences	lang=en
+
+# Note: Replace these sample entries with your actual cookie data
+# The system will automatically parse and inject these cookies for verification

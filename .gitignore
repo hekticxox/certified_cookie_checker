@@ -1,0 +1,81 @@
+# Production .gitignore for Certified Cookie Checker
+
+# Personal working directory (not pushed to git)
+personal/*
+!personal/*/
+!personal/*/.gitkeep
+*.personal
+
+# Personal data and logs
+*.log
+*_screenshot.png
+*_chromedriver.log
+auto_repair.json
+domain_filters.json
+resume_state.json
+retry_state.json
+manual_review_queue.json
+problematic_domains.json
+timeout_recovery_*.json
+
+# Generated reports and data
+COPILOT_CONTEXT.md
+VerifiedCookies.json
+error_log.json
+screenshots_organized/
+screenshots_temp/
+chrome_temp/
+downloads_temp/
+logs_temp/
+
+# Personal cookie files and paths
+Cookies/
+**/Cookies/**
+**/Echologs_*/**
+**/Logs_*/**
+**/Telegram Desktop/**
+
+# Python cache and temp files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Emergency and utility scripts (personal use)
+emergency_chrome_fix.py
+skip_problematic_domains.py
+auto_run.py
+status_report.py
+EMERGENCY_KILL_CHROME.bat
+
+# ChromeDriver executable
+chromedriver.exe
+chromedriver
+
+# Test files and personal scripts
+test_*.py
+debug_*.py
+temp_*.py
